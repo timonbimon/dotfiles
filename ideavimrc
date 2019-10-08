@@ -2,7 +2,7 @@ set surround
 set multiple-cursors
 set commentary
 
-source ~/.vimrc
+" source ~/.vimrc
 
 
 " vim-multiple-cursors
@@ -19,6 +19,7 @@ map g<C-p> g<A-p>
 nmap <leader>ri :action Inline<CR>
 nmap <leader>rv :action IntroduceVariable<CR>
 nmap <leader>rm :action Move<CR>
+nmap <leader>rn :action RenameElement<CR>
 
 
 
