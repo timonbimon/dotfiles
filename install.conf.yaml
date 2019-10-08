@@ -15,6 +15,7 @@
 
     # zsh & prezto
     ~/.zprezto: prezto/
+    ~/.zprezto/contrib: prezto-contrib/
     ~/.zpreztorc: zpreztorc
     ~/.zprofile: zprofile
     ~/.zshenv: zshenv
