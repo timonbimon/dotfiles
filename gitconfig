@@ -1,0 +1,7 @@
+[user]
+	name = timonbimon
+	email = truban93@gmail.com
+[credential]
+	helper = osxkeychain
+[core]
+	editor = vim
