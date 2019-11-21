@@ -5,6 +5,9 @@
 - clean: ['~']
 
 - link:
+    # git
+    ~/.gitconfig: gitconfig
+
     # vim
     ~/.config/nvim:
       create: true
