@@ -4,13 +4,13 @@
 "   1.  GENERAL CONFIGURATION
 "   -------------------------------
 
-"   Activate pathogen
+"   Activate vim-plug
 "   ------------------------------------------------------------
-    execute pathogen#infect()
-
-"   Check for indentation rules in after/ftplugin
-"   ------------------------------------------------------------
-    filetype plugin indent on
+    call plug#begin('~/.vim/plugged')
+    Plug 'tpope/vim-surround'
+    Plug 'tpope/vim-commentary'
+    Plug 'terryma/vim-multiple-cursors'
+    call plug#end()
 
 "   Set-up relative and absolute line number handling
 "   ------------------------------------------------------------
@@ -100,36 +100,6 @@
     map <leader>{ ysiw{
     vmap <leader>} c{ <C-R>" }<ESC>
     vmap <leader>{ c{<C-R>"}<ESC>
-
-"   nerdtree.vim & vim-nerdtree-tabs.vim
-"   ------------------------------------------------------------
-    " Make nerdtree look nice
-    let NERDTreeMinimalUI = 1
-    let NERDTreeDirArrows = 1
-    let g:NERDTreeWinSize = 30
-    " Auto open nerd tree on startup
-    let g:nerdtree_tabs_open_on_gui_startup = 0
-    " Focus in the main content window
-    let g:nerdtree_tabs_focus_on_files = 1
-
-    " Open the project tree and expose current file in the nerdtree with Ctrl-\
-    " " calls NERDTreeFind iff NERDTree is active, current window contains a modifiable file, and we're not in vimdiff
-    function! OpenNerdTree()
-        if &modifiable && strlen(expand('%')) > 0 && !&diff
-            NERDTreeFind
-            NERDTreeTabsOpen
-        else
-            NERDTreeTabsToggle
-        endif
-    endfunction
-    nnoremap <silent> <C-\> :call OpenNerdTree()<CR>
-
-    " Window manipulation
-    " Move between split windows by using the four directions H, L, K, J
-    nnoremap <silent> <C-h> <C-w>h
-    nnoremap <silent> <C-l> <C-w>l
-    nnoremap <silent> <C-k> <C-w>k
-    nnoremap <silent> <C-j> <C-w>j
 
 "   Strip trailing whitespace
 "   ------------------------------------------------------------
