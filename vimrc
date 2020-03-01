@@ -10,6 +10,8 @@
     Plug 'tpope/vim-surround'
     Plug 'tpope/vim-commentary'
     Plug 'terryma/vim-multiple-cursors'
+    Plug '/usr/local/opt/fzf'
+    Plug 'junegunn/fzf.vim'
     call plug#end()
 
 "   Set-up relative and absolute line number handling
@@ -100,6 +102,11 @@
     map <leader>{ ysiw{
     vmap <leader>} c{ <C-R>" }<ESC>
     vmap <leader>{ c{<C-R>"}<ESC>
+
+"   fzf.vim
+"   ------------------------------------------------------------
+    nnoremap <silent> <leader>o :Files<CR>
+    nnoremap <silent> <leader>f :Rg<CR>
 
 "   Strip trailing whitespace
 "   ------------------------------------------------------------
