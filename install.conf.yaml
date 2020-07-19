@@ -28,6 +28,10 @@
     ~/.fzf.zsh: fzf.zsh
     ~/.fzf.bash: fzf.bash
 
+    # starship
+    ~/.config/starship.toml: config/starship.toml
+
+
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
