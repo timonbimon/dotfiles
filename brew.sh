@@ -3,6 +3,9 @@
 brew update
 brew upgrade
 
+# starship.rs - cross-shell prompt
+brew install starship
+
 # rg — ripgrep recursively searches directories for regex patterns
 brew install ripgrep
 
