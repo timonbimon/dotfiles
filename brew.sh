@@ -9,6 +9,15 @@ brew install starship
 # rg — ripgrep recursively searches directories for regex patterns
 brew install ripgrep
 
+# fd — a simple, fast and user-friendly alternative to find
+brew install fd
+
+# hyperfine - A command-line benchmarking tool
+brew install hyperfine
+
+# dust - a more intuitive version of du
+brew install dust
+
 # bat — A cat(1) clone with wings
 brew install bat
 
