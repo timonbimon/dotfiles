@@ -46,7 +46,6 @@ format = """\
 symbol = "☸  "
 disabled = false
 [kubernetes.context_aliases]
-"gke_luminovo-default_us-central1-c_develop" = "GCP"
 "lumiquote-dev" = "Azure (Dev)"
 
 [aws]
