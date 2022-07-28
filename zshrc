@@ -3,7 +3,7 @@
 #
 
 # add homebrewed binaries at beginning of path
-export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+export PATH=$HOME/bin:/opt/homebrew/bin:/usr/local/bin:/usr/local/sbin:$PATH
 
 # add homebrew completion's
 # https://docs.brew.sh/Shell-Completion#configuring-completions-in-zsh
@@ -31,7 +31,7 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 # export Editor; e.g. used by espanso
-export EDITOR=/usr/local/bin/nvim
+export EDITOR=/opt/homebrew/bin/nvim
 
 
 # Add some aliases
@@ -42,6 +42,14 @@ alias ll='exa -alh'
 alias sed='sd'
 alias time="hyperfine"
 alias vim="nvim"
+
+# Luminovo functions
+lumi-add-ip-to-prod-db-firewall() {
+    az postgres flexible-server firewall-rule create --resource-group LumiQuote-data --name lumiquote-prod-11-18 --rule-name `whoami`-allowip --start-ip-address `curl ifconfig.me` --end-ip-address `curl ifconfig.me`
+}
+lumi-remove-ip-from-prod-db-firewall() {
+    az postgres flexible-server firewall-rule delete --rule-name `whoami`-allowip --resource-group LumiQuote-data --name lumiquote-prod-11-18 --yes
+}
 
 # add gcloud auto completion
 if [[ -d "$(brew --prefix)/Caskroom/google-cloud-sdk" ]]; then
