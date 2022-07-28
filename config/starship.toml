@@ -47,6 +47,7 @@ symbol = "☸  "
 disabled = false
 [kubernetes.context_aliases]
 "lumiquote-dev" = "Azure (Dev)"
+"lumiquote-prod-germanywestcentral" = "Azure (Prod)"
 
 [aws]
 disabled = true
