@@ -30,6 +30,9 @@
     # starship
     ~/.config/starship.toml: config/starship.toml
 
+    # psql
+    ~/.psqlrc: psqlrc
+
 
 
 - shell:
