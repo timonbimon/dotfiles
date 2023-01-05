@@ -43,7 +43,7 @@ format = """\
     """
 
 [kubernetes]
-symbol = "☸  "
+symbol = "☸ "
 disabled = false
 [kubernetes.context_aliases]
 "lumiquote-dev" = "Azure (Dev)"

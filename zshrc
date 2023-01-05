@@ -33,6 +33,10 @@ export LANG=en_US.UTF-8
 # export Editor; e.g. used by espanso
 export EDITOR=/opt/homebrew/bin/nvim
 
+# add Rust things to path
+export PATH="/usr/local/opt/libpq/bin:$PATH"
+export PATH="/opt/homebrew/bin/protoc :$PATH"
+
 
 # Add some aliases
 alias du="dust"
