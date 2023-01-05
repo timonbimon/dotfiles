@@ -4,4 +4,4 @@
 [credential]
 	helper = osxkeychain
 [core]
-	editor = vim
+	editor = nvim
