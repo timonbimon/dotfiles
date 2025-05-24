@@ -45,9 +45,14 @@ format = """\
 [kubernetes]
 symbol = "☸ "
 disabled = false
-[kubernetes.context_aliases]
-"lumiquote-dev" = "Azure (Dev)"
-"lumiquote-prod-germanywestcentral" = "Azure (Prod)"
+
+[[kubernetes.contexts]]
+context_pattern = "lumiquote-dev"
+context_alias = "Azure (Dev)"
+
+[[kubernetes.contexts]]
+context_pattern = "lumiquote-prod-germanywestcentral"
+context_alias = "Azure (Prod)"
 
 [aws]
 disabled = true
